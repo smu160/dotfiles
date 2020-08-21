@@ -206,6 +206,10 @@ highlight GitGutterAdd ctermfg=darkgreen
 highlight GitGutterChange ctermfg=yellow
 highlight GitGutterDelete ctermfg=darkred
 
+" Fixes error:
+" vimtex: g:tex_flavor not specified
+"         Please read :help vimtex-tex-flavor!
+let g:tex_flavor = "latex"
 
 let g:vimtex_quickfix_mode=0
 let g:vimtex_syntax_enabled = 1
