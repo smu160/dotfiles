@@ -3,10 +3,9 @@ if [ -f /etc/profile ]; then
     source /etc/profile
 fi
 
-alias l='ls -lG'
-alias ll='ls -ahlG'
-alias grep='grep --color=auto'
-alias brewitall='brew update && brew upgrade && brew cleanup'
+if [ -e $HOME/.bash_aliases ]; then
+    source $HOME/.bash_aliases
+fi
 
 # Silence the warning that the default shell is now zsh on macOS Catalina
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -44,7 +43,7 @@ xterm*|rxvt*)
 esac
 
 # Added for MacTeX
-export PATH="$PATH:/usr/local/texlive/2018/bin/x86_64-darwin/"
+export PATH="$PATH:/usr/local/texlive/2020/bin/x86_64-darwin/"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -62,3 +61,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source ~/.bashrc
+
+export PATH="$HOME/.cargo/bin:$PATH"
