@@ -1,4 +1,4 @@
-let g:startify_bookmarks = ['~/.bash_profile', '~/.vimrc', '~/.bashrc', '~/.tmux.conf']
+let g:startify_bookmarks = ['~/.bash_profile', '~/.vimrc', '~/.bashrc', '~/.tmux.conf', '~/.alacritty.yml']
 
 let g:startify_lists = [
       \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
@@ -179,6 +179,14 @@ Plug 'lervag/vimtex'
 
 Plug 'majutsushi/tagbar'
 
+Plug 'joshdick/onedark.vim'
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'sheerun/vim-polyglot'
+
+Plug 'rust-lang/rust.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -188,10 +196,10 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " set termguicolors
-colorscheme seattle
+colorscheme onedark
 
 " Enable transparency in Vim
-" hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 
 "******* Git Gutter settings *******
 set updatetime=250

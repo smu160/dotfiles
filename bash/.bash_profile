@@ -16,7 +16,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export GOPATH=$HOME/4113
+# export GOPATH=$HOME/4113
 
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
@@ -45,6 +45,10 @@ esac
 # Added for MacTeX
 export PATH="$PATH:/usr/local/texlive/2020/bin/x86_64-darwin/"
 
+source ~/.bashrc
+
+export PATH="/Users/saveliyyusufov/.local/share/solana/install/active_release/bin:$PATH"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/saveliyyusufov/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -60,6 +64,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-source ~/.bashrc
-
-export PATH="$HOME/.cargo/bin:$PATH"
+. "$HOME/.cargo/env"

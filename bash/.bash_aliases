@@ -1,5 +1,5 @@
 alias l='ls -lG'
 alias ll='ls -ahlG'
 alias grep='grep --color=auto'
-alias brewitall='brew update && brew upgrade && brew cleanup'
+alias brewitall='brew update && arch -arm64 brew upgrade && brew cleanup'
 alias speedtest='curl https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python'
